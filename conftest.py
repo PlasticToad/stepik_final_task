@@ -14,13 +14,6 @@ def pytest_addoption(parser):
     parser.addoption('--language', action='store', default='en', #можно задать стандартное значение
 						help="Choose language: es")
 						
-#изменить код под тест:
-
-
-#options = Options()
-#options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
-#browser = webdriver.Chrome(options=options)
-
 
 @pytest.fixture(scope="function")
 def browser(request):
