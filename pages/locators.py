@@ -6,6 +6,10 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+    EMAIL_FOR_REGISTER = (By.CSS_SELECTOR, "#id_registration-email")
+    PASSWORD_FOR_REGISTER = (By.CSS_SELECTOR, "#id_registration-password1")
+    PASSWORD_FOR_REGISTER_CONFIRM = (By.CSS_SELECTOR, "#id_registration-password2")
+    REGISTER_BUTTON = (By.NAME, "registration_submit")
 	
 class ProductPageLocators():#уникальные селекторы
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
@@ -18,6 +22,7 @@ class ProductPageLocators():#уникальные селекторы
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-group > a")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators():
     BASKET_FORM = (By.CSS_SELECTOR, ".basket-title") #форма появляется, когда в корзине есть товары. Нет товаров, нет формы
