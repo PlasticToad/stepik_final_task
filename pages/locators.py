@@ -11,7 +11,7 @@ class LoginPageLocators():
     PASSWORD_FOR_REGISTER_CONFIRM = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTER_BUTTON = (By.NAME, "registration_submit")
 	
-class ProductPageLocators():#уникальные селекторы
+class ProductPageLocators():
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
     BOOK_NAME = (By.CSS_SELECTOR, ".product_main > h1")
     BOOK_PRICE = (By.CSS_SELECTOR, ".product_main > .price_color")
@@ -25,6 +25,6 @@ class BasePageLocators():
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators():
-    BASKET_FORM = (By.CSS_SELECTOR, ".basket-title") #форма появляется, когда в корзине есть товары. Нет товаров, нет формы
-    EMPTY_BASKET_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p") #селеткор поля с ообщением о пустой корзине, что б не заморачиватсья с переводами
+    BASKET_FORM = (By.CSS_SELECTOR, ".basket-title")
+    EMPTY_BASKET_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")
     
